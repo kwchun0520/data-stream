@@ -1,0 +1,11 @@
+{
+  "type": "record",
+  "name": "UserEvent",
+  "namespace": "com.example.events",
+  "fields": [
+    {"name": "user_id", "type": "long", "doc": "Unique ID of the user"},
+    {"name": "action", "type": "string", "doc": "The action performed (e.g., 'login', 'logout')"},
+    {"name": "page", "type": "string", "default": "unknown", "doc": "The page that the user interacts"},
+    {"name": "timestamp", "type": "long", "doc": "Time of the event in milliseconds"}
+  ]
+}
